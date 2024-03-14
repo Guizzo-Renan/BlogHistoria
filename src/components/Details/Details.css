@@ -1,0 +1,43 @@
+.details-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha quando não houver espaço suficiente */
+    margin: 2rem;
+  }
+  
+  .image-container {
+    flex: 1 1 50%; /* Ocupa metade da largura em telas grandes e toda a largura em telas pequenas */
+    margin-right: 2rem;
+  }
+  
+  .product-image {
+    width: 100%;
+    max-height: 80vh; /* Ajusta a altura máxima da imagem */
+    object-fit: cover; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Adiciona borda arredondada à imagem */
+    margin-top: 100px;
+  }
+  
+  .details-content {
+    flex: 1 1 40%; /* Ocupa 40% da largura em telas grandes e toda a largura em telas pequenas */
+  }
+  
+  .details-header {
+    margin-bottom: 1rem;
+    margin-top: 100px;
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando necessário */
+
+  }
+  
+  .description-container {
+    margin-bottom: 1rem;
+    
+  }
+  
+  .description-text {
+    font-size: 1.5rem; /* Ajusta o tamanho do texto da descrição */
+  }
+  
+  .carrosel-container {
+    flex: 1 1 100%; /* Ocupa toda a largura */
+    margin-top: 10rem; /* Adiciona espaço acima do Carrossel */
+  }

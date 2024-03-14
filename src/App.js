@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Main from './main';
+import IndividualPage from './pages/individual';
+import  Bottombar  from './components/bottombar/bottombar';
+import  Header  from './components/header/header';
+import  Sidebar  from './components/sidebar/sidebar';
+import Details from './components/Details/index'
+import CardPainel from './components/CardPainel/index';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+        
+      <Header/>
+        
+    {/**  <Bottombar/>*/} 
+     
+      <Routes>
+      
+        <Route path="/" element={<Main />} />
+        <Route path="/detalhes/:id" element={<Details />} />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
+
+
